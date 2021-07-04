@@ -9,10 +9,17 @@
     <!-- Optional command line argument to also run lcd monitor node on rpi --> -->
     <arg name="run_rviz" default="false"/>
 
+    <arg name="debug_mode" default="false"/>
 
     <!-- Run the keyboard command node-->
     <node name="spot_micro_keyboard_command_node" pkg="spot_micro_keyboard_command" type="spotMicroKeyboardMove.py" output="screen">
     </node>
+
+    <node name="lcd_monitor_node" pkg="lcd_monitor" type="sm_lcd_node.py" output="screen"/>
+
+    <include file="$(find spot_micro_motion_cmd)/launch/motion_cmd.launch" >
+        <arg name="debug_mode" value="$(arg debug_mode)"/>
+    </include>
 
     <!-- If run_plot is true, run the plotting node by including it's launch file -->
     <group if="$(arg run_plot)">
