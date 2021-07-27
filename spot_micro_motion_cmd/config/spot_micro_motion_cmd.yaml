@@ -18,35 +18,21 @@ lie_down_height: 0.083        # Height of body center when sitting
 lie_down_foot_x_offset: 0.065 # Fwd/back offset of all(?) feet from default stance when sitting 
 
 # Servo parameters
-num_servos: 12
+num_servos: 16
 servo_max_angle_deg: 82.5
 # 3 = knee, 2 = shoulder, 1 = hip
-RF_3: {num: 15,  center: 306,range: 372,direction:  1, center_angle_deg:  88.2}
-RF_2: {num: 11,  center: 306,range: 389,direction:  1, center_angle_deg: -27.6}
-RF_1: {num: 9,  center: 306,range: 396,direction: -1, center_angle_deg:  -5.4}
-RB_3: {num: 2,  center: 306,range: 396,direction:  1, center_angle_deg:  85.8}
-RB_2: {num: 6,  center: 306,range: 396,direction:  1, center_angle_deg: -35.4}
-RB_1: {num: 8,  center: 306,range: 411,direction:  1, center_angle_deg:  -4.4}
-LB_3: {num: 1,  center: 306,range: 390,direction:  1, center_angle_deg: -73.9}
-LB_2: {num: 5,  center: 306,range: 392,direction:  1, center_angle_deg:  38.7}
-LB_1: {num: 7,  center: 306,range: 374,direction: -1, center_angle_deg:  -0.4}
-LF_3: {num: 16, center: 306,range: 387,direction:  1, center_angle_deg: -82.8}
-LF_2: {num: 12, center: 306,range: 397,direction:  1, center_angle_deg:  38.6}
-LF_1: {num: 10, center: 306,range: 389,direction:  1, center_angle_deg:  -7.6}
-
-# Original config
-#RF_3: {num: 1,  center: 306,range: 372,direction:  1, center_angle_deg:  88.2}
-#RF_2: {num: 2,  center: 306,range: 389,direction:  1, center_angle_deg: -27.6}
-#RF_1: {num: 3,  center: 306,range: 396,direction: -1, center_angle_deg:  -5.4}
-#RB_3: {num: 4,  center: 306,range: 396,direction:  1, center_angle_deg:  85.8}
-#RB_2: {num: 5,  center: 306,range: 396,direction:  1, center_angle_deg: -35.4}
-#RB_1: {num: 6,  center: 306,range: 411,direction:  1, center_angle_deg:  -4.4}
-#LB_3: {num: 7,  center: 306,range: 390,direction:  1, center_angle_deg: -73.9}
-#LB_2: {num: 8,  center: 306,range: 392,direction:  1, center_angle_deg:  38.7}
-#LB_1: {num: 9,  center: 306,range: 374,direction: -1, center_angle_deg:  -0.4}
-#LF_3: {num: 10, center: 306,range: 387,direction:  1, center_angle_deg: -82.8}
-#LF_2: {num: 11, center: 306,range: 397,direction:  1, center_angle_deg:  38.6}
-#LF_1: {num: 12, center: 306,range: 389,direction:  1, center_angle_deg:  -7.6}
+RF_3: {num: 15,  center: 306,range: 418,direction:  1, center_angle_deg:  3.95}
+RF_2: {num: 11,  center: 306,range: 392,direction:  1, center_angle_deg: 9.25}
+RF_1: {num: 9,  center: 306,range: 444,direction: -1, center_angle_deg:  -18.5}
+RB_3: {num: 2,  center: 306,range: 403,direction:  1, center_angle_deg: 39.27}
+RB_2: {num: 6,  center: 306,range: 376,direction:  1, center_angle_deg: -0.44}
+RB_1: {num: 8,  center: 306,range: 425,direction:  1, center_angle_deg:  -6.21}
+LB_3: {num: 1,  center: 306,range: 380,direction:  1, center_angle_deg: 0.43}
+LB_2: {num: 5,  center: 306,range: 402,direction:  1, center_angle_deg:  10.68}
+LB_1: {num: 7,  center: 306,range: 444,direction: -1, center_angle_deg:  -3.35}
+LF_3: {num: 16, center: 306,range: 414,direction:  1, center_angle_deg: -49.78}
+LF_2: {num: 12, center: 306,range: 383,direction:  1, center_angle_deg:  9.90}
+LF_1: {num: 10, center: 306,range: 400,direction:  1, center_angle_deg:  2.89}
 
 # Control Parameters
 transit_tau: 0.3 # Time constant in seconds for first order filters during transition state
